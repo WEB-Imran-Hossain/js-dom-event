@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM Event</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1 onclick="console.log('I am click');">
+      Today DOM Class is a special events
+    </h1>
+    <button onclick="console.log(7);">Click Me</button>
+
+    <br />
+    <button onclick="document.body.style.background='yellow'">
+      Make Yellow
+    </button>
+    <!-- option 2: directly set on the HTML element -->
+    <button onclick="makeRed()">Make Red</button>
+    <!--  option 3: add onclick function -->
+    <button id="make-blue">Make Blue</button>
+    <button id="make-purple">Make purple</button>
+    <!--  option 4: add onclick function -->
+    <button id="make-pink">Make pink</button>
+    <button id="make-green">Make green</button>
+    <button id="make-goldenrod">Make goldenRod</button>
+
+    <script>
+    
+    </script>
+    <script src="./js/event.js"></script>
+  </body>
+</html>

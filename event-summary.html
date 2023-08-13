@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM Summary</title>
+  </head>
+  <body>
+    <!-- 1st apply start -->
+    <h1>Final DOM Event Handlers</h1>
+    <h3 id="handler-status">Default Text</h3>
+    <button onclick="handleOnclick()">
+      Handle Event by Add onclick Function
+    </button>
+
+    <script>
+      function handleOnclick() {
+        const handlerStatus = document.getElementById("handler-status");
+        handlerStatus.innerText =
+          "Handled by function attached on click attribute";
+      }
+    </script>
+    <!-- 1st apply end -->
+
+    <!-- 2d apply start -->
+    <h1>Final DOM Event Handlers</h1>
+    <h3 id="handler-status">Default Text</h3>
+    <button onclick="handleOnclick()">
+      Handle Event by Add onclick Function
+    </button>
+    <button id="event-listener">Handle event by addEventListener</button>
+
+    <!-- option 2 (using all time) -->
+    <script>
+      document
+        .getElementById("event-listener")
+        .addEventListener("click", function () {
+          const handlerStatus = document.getElementById("handler-status");
+          handlerStatus.innerText = 'Text updated by add Event listener button'
+        });
+    </script>
+  </body>
+</html>
